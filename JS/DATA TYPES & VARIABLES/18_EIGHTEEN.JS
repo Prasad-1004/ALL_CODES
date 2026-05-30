@@ -1,0 +1,2 @@
+// Create dynamic typing example.
+

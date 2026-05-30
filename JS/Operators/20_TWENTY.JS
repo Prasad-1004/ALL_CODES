@@ -1,0 +1,1 @@
+// Check data type of array and null.
