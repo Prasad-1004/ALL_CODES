@@ -1,4 +1,4 @@
-// Create a new array where every number is doubled.
+//1. Create a new array where every number is doubled.
 
 let arr = [1, 2, 3, 4, 5];
 
@@ -6,41 +6,41 @@ let result = arr.map((num) => num * 2);
 
 console.log(result);
 
-// Create a new array where every number is multiplied by 10.
+//2. Create a new array where every number is multiplied by 10.
 
 let multi = arr.map((num) => num * 10);
 
 console.log(multi);
 
-// Convert all strings to uppercase.
+//3. Convert all strings to uppercase.
 
 let newarr = ["apple", "banana", "mango"];
 
 console.log(newarr.map((nam) => nam.toUpperCase()));
 
-// Convert all strings to lowercase.
+//4. Convert all strings to lowercase.
 
 let raw = ["HELLO", "WORLD", "JS"];
 
 console.log(raw.map((nam) => nam.toLocaleLowerCase()));
 
-// Add 5 to every number
+//5. Add 5 to every number
 
 console.log(arr.map((nam) => nam + 5));
 
-// Convert every number into a string
+//6. Convert every number into a string
 
 console.log(arr.map((nam) => nam.toString()));
 
-// Return the length of each word
+//7. Return the length of each word
 
 console.log(newarr.map((nam) => nam.length));
 
-// Square every number.
+//8. Square every number.
 
 console.log(arr.map((nam) => nam ** 2));
 
-// Extract all names from the objects.
+//9. Extract all names from the objects.
 
 let obj = [
   { name: "John", age: 25 },
@@ -54,7 +54,7 @@ console.log(obj.map(nam=>nam.age));
 
 
 
-// Create a new array of greetings.
+//10. Create a new array of greetings.
 
 let a = ["John", "Jane", "Bob"]
 
@@ -62,7 +62,7 @@ console.log(a.map(nam=> `Hello ${nam}`));
 
 
 
-// Add a new property isAdult: true to every object.
+//11. Add a new property isAdult: true to every object.
 
 let b = [
   { name: "John", age: 25 },
@@ -75,7 +75,7 @@ console.log(b.map(nam=>
 ));
 
 
-// Create a new array containing:
+//12. Create a new array containing:
 
 // "Name: John"
 // "Name: Jane"
@@ -99,7 +99,7 @@ console.log(newa);
 
 
 
-// Convert prices to strings with a dollar sign.
+//13. Convert prices to strings with a dollar sign.
 
 let price = [100, 200, 300]
 
@@ -107,7 +107,7 @@ console.log(price.map(e=> `$${e}`));
 
 
 
-// Add 1 to the index and return:
+//14. Add 1 to the index and return:
 
 let oldarr = ["Apple", "Banana", "Mango"]
 
@@ -127,7 +127,7 @@ console.log(oldarr.map((item, index) => {
 
 
 
-// Create an array of full names.
+//15. Create an array of full names.
 
 let full = [
   { firstName: "John", lastName: "Doe" },
@@ -139,7 +139,7 @@ console.log(full.map(e => `${e.firstName} ${e.lastName}`));
 
 
 
-// Convert every user object into:
+//16. Convert every user object into:
 
 // {
 //   username: "john",
@@ -261,3 +261,5 @@ console.log(marks.map(e=>{
         grade: e.marks>80?"A" : "B"
     }
 }));
+
+
