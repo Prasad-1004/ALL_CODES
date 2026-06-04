@@ -57,3 +57,22 @@ let arr = ["I", "Love", "JS"];
 let result = arr.map(item => item + "!");
 
 console.log(result);
+
+
+// 7. Add 100 bonus marks
+
+// marks property ta access korte hobe.
+
+let arr = [
+  { name: "A", marks: 50 },
+  { name: "B", marks: 60 }
+];
+
+let result = arr.map(item => {
+  return {
+    name: item.name,
+    marks: item.marks + 100
+  };
+});
+
+console.log(result);
