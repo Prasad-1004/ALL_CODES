@@ -76,3 +76,22 @@ let result = arr.map(item => {
 });
 
 console.log(result);
+
+
+
+// 8
+
+let employees = [
+  { name: "Rahul", salary: 20000 },
+  { name: "Priya", salary: 30000 }
+];
+
+let updatedEmployees = employees.map(employee => {
+  return {
+    name: employee.name,
+    salary: employee.salary + 5000
+  };
+});
+
+console.log(updatedEmployees);
+
