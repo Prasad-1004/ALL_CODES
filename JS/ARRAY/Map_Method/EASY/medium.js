@@ -43,3 +43,17 @@ console.log(aa.map(e=> String(e)));
 let naam = ["John", "Jane", "Alex"]
 
 console.log(naam.map(e=> e[0]));
+
+
+//6. Create sentence
+// ["I", "Love", "JS"]
+
+// Output:
+
+// ["I!", "Love!", "JS!"]
+
+let arr = ["I", "Love", "JS"];
+
+let result = arr.map(item => item + "!");
+
+console.log(result);
