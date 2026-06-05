@@ -182,11 +182,33 @@ console.log(fruit.map(e => {
 
 // 13. Add “₹” before prices
 // [100, 200, 300]
+
+
+let price = [100,200,300];
+
+console.log(price.map(e => `₹${e}`));
+
+
 // 14. Full name combine
 // [
 //   { first: "John", last: "Doe" },
 //   { first: "Jane", last: "Smith" }
 // ]
+
+let full = [
+  { first: "John", last: "Doe" },
+  { first: "Jane", last: "Smith" }
+];
+
+console.log(
+  full.map(e => {
+    return {
+      fullName: e.first + " " + e.last
+    };
+  })
+);
+
+
 // 15. Mark pass/fail
 // [
 //   { name: "A", marks: 40 },
