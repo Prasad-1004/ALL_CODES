@@ -221,6 +221,29 @@ console.log(
 //   "A - Fail",
 //   "B - Pass"
 // ]
+
+
+let students = [
+  { name: "A", marks: 40 },
+  { name: "B", marks: 80 }
+];
+
+console.log(
+  students.map(student => {
+    return `${student.name} - ${student.marks >= 50 ? "Pass" : "Fail"}`;
+  })
+);
+
+
+
+
+
+
+
+
+
+
+
 // 16. Convert string length
 // ["apple", "banana", "kiwi"]
 // 17. Add category field
