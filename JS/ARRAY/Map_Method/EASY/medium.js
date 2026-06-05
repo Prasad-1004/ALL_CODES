@@ -127,6 +127,7 @@ let bc =  [
   { username: "JANE456" }
 ]
 
+console.log(bc.map(e => e.username.toLowerCase()));
 
 
 
@@ -144,6 +145,18 @@ let bc =  [
 // Output:
 
 // [0, 20, 60]
+
+
+
+let nos = [0,20,60];
+
+console.log(nos.map((number, index)=> number*index));
+
+
+
+
+
+
 // 12. Convert to object format
 // ["apple", "banana"]
 
@@ -153,6 +166,20 @@ let bc =  [
 //   { item: "apple" },
 //   { item: "banana" }
 // ]
+
+let fruit = ["apple", "banana"];
+
+console.log(fruit.map(e => {
+  return {
+    item: e
+  };
+}));
+
+
+
+
+
+
 // 13. Add “₹” before prices
 // [100, 200, 300]
 // 14. Full name combine
