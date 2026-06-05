@@ -52,30 +52,30 @@ console.log(naam.map(e=> e[0]));
 
 // ["I!", "Love!", "JS!"]
 
-let arr = ["I", "Love", "JS"];
+// let arr = ["I", "Love", "JS"];
 
-let result = arr.map(item => item + "!");
+// let result = arr.map(item => item + "!");
 
-console.log(result);
+// console.log(result);
 
 
 // 7. Add 100 bonus marks
 
 // marks property ta access korte hobe.
 
-let arr = [
-  { name: "A", marks: 50 },
-  { name: "B", marks: 60 }
-];
+// let arr = [
+//   { name: "A", marks: 50 },
+//   { name: "B", marks: 60 }
+// ];
 
-let result = arr.map(item => {
-  return {
-    name: item.name,
-    marks: item.marks + 100
-  };
-});
+// let result = arr.map(item => {
+//   return {
+//     name: item.name,
+//     marks: item.marks + 100
+//   };
+// });
 
-console.log(result);
+// console.log(result);
 
 
 
@@ -95,3 +95,117 @@ let updatedEmployees = employees.map(employee => {
 
 console.log(updatedEmployees);
 
+
+
+// 9. convert age to  voting status
+
+// [
+//   "John - Not Eligible",
+//   "Jane - Eligible"
+// ]
+
+let user = [
+  { name: "John", age: 17 },
+  { name: "Jane", age: 20 }
+]
+
+console.log(user.map(e=> {
+  return `${e.name} - ${e.age>18?'Eligible':'Not Eligible'}`
+})); 
+
+
+// 10. Extract usernames in lowercase
+// [
+//   { username: "JOHN123" },
+//   { username: "JANE456" }
+// ]
+
+
+
+let bc =  [
+  { username: "JOHN123" },
+  { username: "JANE456" }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+// 11. Multiply index * value
+// [10, 20, 30]
+
+// Output:
+
+// [0, 20, 60]
+// 12. Convert to object format
+// ["apple", "banana"]
+
+// Output:
+
+// [
+//   { item: "apple" },
+//   { item: "banana" }
+// ]
+// 13. Add “₹” before prices
+// [100, 200, 300]
+// 14. Full name combine
+// [
+//   { first: "John", last: "Doe" },
+//   { first: "Jane", last: "Smith" }
+// ]
+// 15. Mark pass/fail
+// [
+//   { name: "A", marks: 40 },
+//   { name: "B", marks: 80 }
+// ]
+
+// Output:
+
+// [
+//   "A - Fail",
+//   "B - Pass"
+// ]
+// 16. Convert string length
+// ["apple", "banana", "kiwi"]
+// 17. Add category field
+// [
+//   { item: "Laptop" },
+//   { item: "Shirt" }
+// ]
+
+// Output:
+
+// [
+//   { item: "Laptop", category: "Electronics" },
+//   { item: "Shirt", category: "Clothing" }
+// ]
+// 18. Reverse each word
+// ["js", "react", "html"]
+// 19. Add currency format
+// [1000, 2000, 3000]
+
+// Output:
+
+// ["$1000", "$2000", "$3000"]
+// 20. Final Boss 🔥 (React Level)
+
+// Convert this:
+
+// [
+//   { id: 1, title: "Post 1" },
+//   { id: 2, title: "Post 2" }
+// ]
+
+// To:
+
+// [
+//   "<div>Post 1</div>",
+//   "<div>Post 2</div>"
+// ]
