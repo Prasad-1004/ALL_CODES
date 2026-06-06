@@ -62,6 +62,31 @@ Object.values(person).forEach(value => {
 // }
 // ```
 
+const car = {
+  brand: "Toyota",
+  model: "Corolla"
+};
+
+// car.year = 2024;
+
+// console.log(car);                         Easiest way
+
+
+let newCar = {...car , year:2024}
+
+console.log(newCar);                      // React Approach
+
+
+
+
+
+
+
+
+
+
+
+
 // ---
 
 // ### 3. Update Property Value
@@ -76,6 +101,12 @@ Object.values(person).forEach(value => {
 // Update marks to `90`.
 
 // ---
+
+
+
+
+
+
 
 // ### 4. Delete a Property
 
