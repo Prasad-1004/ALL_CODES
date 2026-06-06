@@ -163,6 +163,25 @@ console.log(user);
 // true
 // ```
 
+
+const book = {
+  title: "JavaScript Guide",
+  pages: 0
+};
+
+
+if("pages" in book && book.pages>0){
+    console.log(true);
+}else {
+    console.log(false);
+}
+
+
+
+
+
+
+
 // ---
 
 // ## 🟡 Medium Level
