@@ -103,6 +103,15 @@ console.log(newCar);                      // React Approach
 // ---
 
 
+const student = {
+  name: "Alice",
+  marks: 70
+};
+
+student.marks = 90;
+
+console.log(student);
+
 
 
 
@@ -110,14 +119,30 @@ console.log(newCar);                      // React Approach
 
 // ### 4. Delete a Property
 
-// ```js
+
 // const user = {
 //   username: "admin",
 //   password: "12345"
 // };
-// ```
+
 
 // Delete password property.
+
+
+
+
+const user = {
+  username: "admin",
+  password: "12345"
+};
+
+
+delete user.password ;
+console.log(user);
+
+
+
+
 
 // ---
 
