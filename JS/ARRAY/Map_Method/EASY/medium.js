@@ -268,8 +268,21 @@ console.log(
 //   { item: "Laptop", category: "Electronics" },
 //   { item: "Shirt", category: "Clothing" }
 // ]
+
+
+
+
 // 18. Reverse each word
 // ["js", "react", "html"]
+
+
+let arr = ["js", "react", "html"];
+
+let result = arr.map(word =>
+  word.split("").reverse().join("")
+);
+
+console.log(result);
 
 
 
