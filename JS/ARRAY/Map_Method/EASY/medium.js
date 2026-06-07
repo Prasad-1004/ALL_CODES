@@ -276,6 +276,9 @@ console.log(
 // Output:
 
 // ["$1000", "$2000", "$3000"]
+
+
+
 // 20. Final Boss 🔥 (React Level)
 
 // Convert this:
@@ -291,3 +294,13 @@ console.log(
 //   "<div>Post 1</div>",
 //   "<div>Post 2</div>"
 // ]
+
+
+let posts = [
+  { id: 1, title: "Post 1" },
+  { id: 2, title: "Post 2" }
+];
+
+let result = posts.map(item => `<div>${item.title}</div>`);
+
+console.log(result);
