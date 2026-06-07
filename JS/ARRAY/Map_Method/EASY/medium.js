@@ -270,6 +270,9 @@ console.log(
 // ]
 // 18. Reverse each word
 // ["js", "react", "html"]
+
+
+
 // 19. Add currency format
 // [1000, 2000, 3000]
 
@@ -277,6 +280,12 @@ console.log(
 
 // ["$1000", "$2000", "$3000"]
 
+
+let arr = [1000, 2000, 3000];
+
+let result = arr.map(item => `$${item}`);
+
+console.log(result);
 
 
 // 20. Final Boss 🔥 (React Level)
