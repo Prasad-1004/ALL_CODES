@@ -59,6 +59,16 @@ console.log(naam.map(e=> e[0]));
 // console.log(result);
 
 
+let arr = ["I", "Love", "JS"];
+
+let result = arr.map(item => item + "!");
+
+console.log(result);
+
+
+
+
+
 // 7. Add 100 bonus marks
 
 // marks property ta access korte hobe.
