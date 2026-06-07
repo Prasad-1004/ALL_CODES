@@ -256,6 +256,8 @@ console.log(
 
 // 16. Convert string length
 // ["apple", "banana", "kiwi"]
+
+
 // 17. Add category field
 // [
 //   { item: "Laptop" },
@@ -268,6 +270,23 @@ console.log(
 //   { item: "Laptop", category: "Electronics" },
 //   { item: "Shirt", category: "Clothing" }
 // ]
+
+
+let arr = [
+  { item: "Laptop" },
+  { item: "Shirt" }
+];
+
+let result = arr.map(obj => {
+  if (obj.item === "Laptop") {
+    return { ...obj, category: "Electronics" };
+  } else if (obj.item === "Shirt") {
+    return { ...obj, category: "Clothing" };
+  }
+});
+
+console.log(result);
+
 
 
 
