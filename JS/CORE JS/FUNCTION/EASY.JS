@@ -54,6 +54,16 @@ console.log(sums([1,2,3]));
 // Write a function to find factorial of a number
 
 
+let fact = (a) => {
+
+    let ans = 1;
+    for(let i = a; i>=1; i--){
+        ans = ans*i
+    }
+    return ans;
+}
+
+console.log(fact(5));
 
 
 // Write a function to find maximum of 3 numbers
