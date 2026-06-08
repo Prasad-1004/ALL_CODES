@@ -91,5 +91,19 @@ if (isPalindrome) {
 // ["olleh dlrow", "doog yob"]
 
 
-let inp = ["hello world", "good boy"]
+let inp = ["hello world", "good boy"];
 
+let newinp = [];
+
+for (let i = 0; i < inp.length; i++) {
+    let str = inp[i];
+    let reversed = "";
+
+    for (let j = str.length - 1; j >= 0; j--) {
+        reversed += str[j];
+    }
+
+    newinp.push(reversed);
+}
+
+console.log(newinp);
