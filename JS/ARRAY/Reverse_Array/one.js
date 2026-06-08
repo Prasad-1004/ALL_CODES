@@ -1,54 +1,95 @@
 // Reverse an array without using reverse().
 
-let arr = [10,20,30,40,50]
+let arr = [1, 2, 3, 4];
+let newarr = [];
 
-let reversed = []
-
-for(let i = arr.length-1 ; i>=0; i--){
-    reversed.push(arr[i]);
+for (let i = arr.length - 1; i >= 0; i--) {
+  newarr.push(arr[i]);
 }
 
-console.log(reversed);
-
-
-
+console.log(arr);
+console.log(newarr);
 
 // Print an array from last index to first index.
 
+arr = arr.reverse();
+console.log(arr);
 
+// Reverse only the string elements.
 
-console.log(arr.reverse());
+// Input: ["apple", "banana", "mango"]
 
+// Output:
 
+// ["elppa", "ananab", "ognam"]
 
+let fruits = ["apple", "banana", "mango"];
+let result = [];
 
-// Create a new reversed array from an existing array.
+for (let i = 0; i < fruits.length; i++) {
+    let reversed = "";
 
-let arrs = [1,2,3,4,5,6,7,8,9]
+    for (let j = fruits[i].length - 1; j >= 0; j--) {
+        reversed += fruits[i][j];
+    }
 
-let news = arrs.reverse()
-
-console.log(news);
-
-
-// Reverse only the first half of an array.
-
-
-// let arrs = [1,2,3,4,5,6,7,8,9]
-
-let newa = []
-
-// First half reverse
-for(let i = (Math.floor(arrs.length / 2)) - 1; i >= 0; i--){
-    newa.push(arrs[i])
+    result.push(reversed);
 }
 
-// Remaining part same order
-for(let i = Math.floor(arrs.length / 2); i < arrs.length; i++){
-    newa.push(arrs[i])
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+// Check if an array is palindrome.
+
+// [1, 2, 3, 2, 1] => true
+
+// [1, 2, 3, 4] => false
+
+
+let nos = [1, 2, 3, 2, 1];
+
+let new_nos = [];
+
+// reverse copy
+for (let i = nos.length - 1; i >= 0; i--) {
+    new_nos.push(nos[i]);
 }
 
-console.log(newa)
+// compare
+let isPalindrome = true;
+
+for (let i = 0; i < nos.length; i++) {
+    if (nos[i] !== new_nos[i]) {
+        isPalindrome = false;
+        break;
+    }
+}
+
+if (isPalindrome) {
+    console.log("It is Palindrome array");
+} else {
+    console.log("It is not a Palindrome array");
+}
 
 
-// Reverse an array using a loop and swap logic.
+
+
+// Reverse every word in an array.
+
+// Input:
+// ["hello world", "good boy"]
+
+// Output:
+// ["olleh dlrow", "doog yob"]
+
+
+let inp = ["hello world", "good boy"]
+
