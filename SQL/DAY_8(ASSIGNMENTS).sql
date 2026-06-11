@@ -24,7 +24,8 @@ SELECT * FROM marvels
 
 --Q1: Retrieve all employees' first_names and their departments.
 
-SELECT first_name , department from marvels;
+SELECT first_name , dept_name
+FROM marvels
 
 
 --Q2: Update the salary of all employees in the 'IT' department by increasing it by 10%.
@@ -33,34 +34,54 @@ UPDATE marvels
 SET salary = salary + (salary * 0.10)
 WHERE department = 'IT';
 
+
 --Q3: Delete all employees who are older than 34 years.
 
 DELETE FROM marvels
-WHERE age >34;
+WHERE age>34
+
+
 
 --Q4: Add a new column `email` to the `employees` table.
 
 ALTER TABLE marvels
-ADD COLUMN email VARCHAR(50)
-
-SELECT * FROM marvels
+ADD COLUMN email VARCHAR(50);
 
 --Q5: Rename the `department` column to `dept_name`.
 
 ALTER TABLE marvels
-RENAME COLUMN department to dept_name
+RENAME COLUMN department TO dept_name;
 
 
 
 --Q6: Retrieve the names of employees who joined after January 1, 2021.
 
-SELECT first_name FROM marvels
-WHERE joining_date after 2021-01-01
+SELECT first_name, last_name
+FROM marvels
+WHERE joining_date > '2021-01-01';
 
 --Q7: Change the data type of the `salary` column to `INTEGER`.
+
+ALTER TABLE marvels
+
 
 
 
 --Q8: List all employees with their age and salary in descending order of salary.
+
+SELECT first_name , age , salary FROM marvels
+ORDER BY salary DESC
+
+
 --Q9: Insert a new employee with the following details: 'Raj', 'Singh', 'Marketing', 60000, '2023-09-15', 30.
+
+INSERT INTO marvels
+(first_name,last_name,dept_name,salary,joining_date,age)
+VALUES ('Raj', 'Singh', 'Marketing', 60000, '2023-09-15', 30)
+
+
 --Q10: Update age of employee +1 to every employee
+
+
+UPDATE marvels
+SET age = age + 1;
