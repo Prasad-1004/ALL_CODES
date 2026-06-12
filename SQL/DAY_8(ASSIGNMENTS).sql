@@ -84,4 +84,4 @@ VALUES ('Raj', 'Singh', 'Marketing', 60000, '2023-09-15', 30)
 
 
 UPDATE marvels
-SET age = age + 10;
+SET age = age + 101;
