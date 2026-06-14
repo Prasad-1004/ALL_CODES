@@ -134,3 +134,125 @@ var hello = function () {
 
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// 11.
+
+var x = 20;
+
+function example() {
+  var x = 10;
+  console.log(x);
+}
+
+example();
+
+// Output : 10
+
+
+// 12.
+
+var aa;
+
+console.log(aa);
+
+// Output : undefined
+
+
+// 13.
+
+
+// console.log(score);
+
+// score = 100;
+
+
+// Output : error (Score is not defined)
+
+
+
+
+// 14.
+
+function add() {
+  return 5 + 5;
+}
+
+console.log(add());
+
+// output : 10
+
+
+
+15.
+
+console.log(test);
+
+function test() {
+  return "JavaScript";
+}
+
+// Output: [Function: test]
+
+
+
+// 16.
+
+var number = 10;
+
+function check() {
+  console.log(number);
+  var number = 5;
+}
+
+check();
+
+// Output : undefined (var supports hoisted)
+
+
+
+
+
+// 17.
+
+var aaa = 1;
+
+function test() {
+  console.log(aaa);
+  aaa = 5;
+}
+
+test();
+
+console.log(aaa);
+
+// Output : 1 and 5
+
+
+
+
+
+// 18.
+
+console.log(aaaa);
+
+let aaaa;
+
+
+
+
+// 19.
+
+// console.log(xx);
+
+// const xx = 20;
+
+
+// 20.
+
+// Explain:
+
+// var
+// let
+// const
+// function declaration
+// function expression
